@@ -1,0 +1,18 @@
+<ion-view view-title="Dashboard">
+  <ion-content class="padding">
+    <h2>WkWebView Test</h2>
+    <p>
+    This is test to show the that if a ViewController is placed over a WKWebview and a memory warning is thrown, the WKWebView closes, stuff restarting the app
+    </p>
+    <p>
+      To start, you can either run this in the simulator or device, however producing the Memory Warning - is easily on the Simulator. Simply tap the "Take Picture" button bellow:
+    </p>
+     <button ng-click="takePicture();" class="button button-block button-positive">
+      Take Picture
+    </button>
+    </p>
+
+    <img ng-src="{{imageURL}}" ng-if="imageURL" />
+    
+  </ion-content>
+</ion-view>
